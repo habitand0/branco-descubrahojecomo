@@ -1,126 +1,576 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	  
-    <link rel="preload" href="https://scripts.converteai.net/72089295-c0ee-414a-ac1e-e009acd654f1/players/63e2828ec71e360009accf87/player.js" as="script">
-    <link rel="preload" href="https://cdn.converteai.net/lib/js/smartplayer/v1/smartplayer.min.js" as="script">
-    <link rel="preload" href="https://images.converteai.net/72089295-c0ee-414a-ac1e-e009acd654f1/players/63e2828ec71e360009accf87/thumbnail.jpg" as="image">
-    <link rel="preload" href="https://cdn.converteai.net/72089295-c0ee-414a-ac1e-e009acd654f1/63e28206613140000a656ec4/playlist.m3u8" as="fetch">
-    <link rel="dns-prefetch" href="https://cdn.converteai.net">
-    <link rel="dns-prefetch" href="https://scripts.converteai.net">
-    <link rel="dns-prefetch" href="https://images.converteai.net">
-    <link rel="dns-prefetch" href="https://api.vturb.com.br">
-	  
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-	<link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Dosis:wght@200;300;400;500;600;700;800&family=Oswald:wght@200;300;400;500;600;700&family=Signika:wght@300;400;500;600;700&family=Montserrat:wght@600;700;800&family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./assets/css/com.css">
-    <!-- PIXEL FACEBOOK -->
-    <!-- Meta Pixel Code -->
-		<script>
-		!function(f,b,e,v,n,t,s)
-		{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-		n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-		if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-		n.queue=[];t=b.createElement(e);t.async=!0;
-		t.src=v;s=b.getElementsByTagName(e)[0];
-		s.parentNode.insertBefore(t,s)}(window, document,'script',
-		'https://connect.facebook.net/en_US/fbevents.js');
-		fbq('init', '566561291734007');
-		fbq('track', 'PageView');
-		</script>
-		<noscript><img height="1" width="1" style="display:none"
-		src="https://www.facebook.com/tr?id=566561291734007&ev=PageView&noscript=1"
-		/></noscript>
-		<!-- End Meta Pixel Code -->
-    <!-- Título da Página -->
-    <title>Nova Oportunidade</title>   
-    <style type="text/css">
-      body {
-        color: black;
-        background-color: black;
-        background-attachment: fixed;
-      }
-      .smartplayer-image-start, .smartplayer-video, .smartplayer-video-current{
-      	border: 1px solid #4adede !important;
-	box-shadow: 0 0 6px 3px rgb(74 222 222 / 33%) !important;
-	border-radius: 4px !important;
-      }
-    </style>
-  </head>
-  <body>    
-    <header class="py-4">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-8 text-center">
-            <!-- VSL -->			
-            <div id="vid_63e2828ec71e360009accf87" style="position:relative;width:100%;padding: 56.25% 0 0;"><img id="thumb_63e2828ec71e360009accf87" src="https://images.converteai.net/72089295-c0ee-414a-ac1e-e009acd654f1/players/63e2828ec71e360009accf87/thumbnail.jpg" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;display:block;"><div id="backdrop_63e2828ec71e360009accf87" style="position:absolute;top:0;width:100%;height:100%;-webkit-backdrop-filter:blur(5px);backdrop-filter:blur(5px);"></div></div><script type="text/javascript" id="scr_63e2828ec71e360009accf87">var s=document.createElement("script");s.src="https://scripts.converteai.net/72089295-c0ee-414a-ac1e-e009acd654f1/players/63e2828ec71e360009accf87/player.js",s.async=!0,document.head.appendChild(s);</script>
-			
-			<!-- Script Delay Botão -->
-			<style>.lagbut{display:none;}</style> 
-			<script type="text/javascript">
-			var tmin = 8;
-			var tseg = 22;
-			  
-			var tpitch = (tmin * 60000) + (tseg * 1000);
-			setTimeout('show()', tpitch);
-			console.log('pitch em:', tpitch,'ms - totalizando',tmin,'min','e',tseg,'seg'); 
-			function show(){
-			var list = document.getElementsByClassName('lagbut');
-			for (var i = 0; i < list.length; i++) {
-				list[i].style.visibility = 'visible';
-				list[i].style.display = 'block';
-				}
-			}
-			</script>	
-            <!-- Botão -->
-            <div class="mt-4 animado lagbut">
-              <a href="https://pay.kiwify.com.br/cMxhajr" class="a-btn">
-                <span class="span-btn">QUERO O ALGORITIMO DO BRANCO</span>
-              </a>
+<html lang="pt-BR">
+   <head>
+	  <script src="https://cdn.cloakup.me/checker.js" data-campaign="8e01b1f222c773efe5954e8dcd2d1ebc.fe3423e91c74ed11846b44191376d83f2bff62ad487be6ab8ffaa042c486e6963f0b163f8fb354bcac97d8e8dd17127dd7125414057e1ef44a59b971a6aac83d5977f1705466"></script>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="profile">
+      <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+      <link rel="alternate" type="application/rss+xml" title="Feed para Rock Content - BR »" href="https://rockcontent.com/br/feed/">
+      <link rel="alternate" type="application/rss+xml" title="Feed de comentários para Rock Content - BR »" href="https://rockcontent.com/br/comments/feed/">
+      <link rel="alternate" type="application/rss+xml" title="Feed de Rock Content - BR » Story" href="https://rockcontent.com/br/web-stories/feed/">
+      <link rel="stylesheet" id="rock-single-post-base-css" href="https://rockcontent.com/br/wp-content/plugins/rock-content-custom-code/assets/css/min/rock-single-post-base.min.css?ver=2.0.1" media="">
+      <link rel="stylesheet" id="rock-convert-css" href="https://rockcontent.com/br/wp-content/plugins/rock-convert/inc/frontend/css/rock-convert-frontend.min.css?ver=2.8" media="all">
+      <link rel="stylesheet" id="hello-elementor-css" href="https://rockcontent.com/br/wp-content/themes/hello-elementor/style.min.css?ver=2.6.1" media="all">
+      <link rel="stylesheet" id="elementor-frontend-css" href="https://rockcontent.com/br/wp-content/plugins/elementor/assets/css/frontend-lite.min.css?ver=3.10.0" media="all">
+      <link rel="stylesheet" id="elementor-post-7-css" href="https://rockcontent.com/br/wp-content/uploads/sites/2/elementor/css/post-7.css?ver=1674585654" media="all">
+      <link rel="stylesheet" id="elementor-pro-css" href="https://rockcontent.com/br/wp-content/plugins/elementor-pro/assets/css/frontend-lite.min.css?ver=3.10.1" media="all">
+      <link rel="stylesheet" id="elementor-post-34722-css" href="https://rockcontent.com/br/wp-content/uploads/sites/2/elementor/css/post-34722.css?ver=1674585655" media="all">
+      <link rel="stylesheet" id="elementor-post-34720-css" href="https://rockcontent.com/br/wp-content/uploads/sites/2/elementor/css/post-34720.css?ver=1674585655" media="all">
+      <link rel="stylesheet" id="elementor-post-34714-css" href="https://rockcontent.com/br/wp-content/uploads/sites/2/elementor/css/post-34714.css?ver=1674585656" media="all">
+   <body class="post-template-default single single-post postid-2335 single-format-standard wp-custom-logo elementor-default elementor-kit-7 elementor-page-34714">
+      <div id="pull-down" class="hb-50 hellobar hb-bottom-right se-885319 inverted" style="background-color: rgb(255, 255, 255);"></div>
+      <iframe src="about:blank" id="rfd23e51ac2706c48b8fc79314986ccaf86834047-container" class="HB-Slider hb-animated azuki hb-bottom-right" name="rfd23e51ac2706c48b8fc79314986ccaf86834047-container-0" data-lf-yt-playback-inspected-jmvz8gkgqoe82pod="true" data-lf-vimeo-playback-inspected-jmvz8gkgqoe82pod="true" style="display: none;"></iframe><a cu="#" tabindex="-1" aria-hidden="true" rel="nofollow" style="opacity: 0.01; position: absolute; z-index: -999; width: 54px; height: 22px;">___</a>
+      <div style="opacity: 0.01; position: absolute; z-index: -1000; width: 54px; height: 22px;"></div>
+      <a class="skip-link screen-reader-text" href="#content">
+      Skip to content</a>
+      <div data-elementor-type="header" data-elementor-id="34722" class="elementor elementor-34722 elementor-location-header">
+         <header class="elementor-section elementor-top-section elementor-element elementor-element-2cf6e4d elementor-section-height-min-height elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-items-middle" data-id="2cf6e4d" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+            <div class="elementor-container elementor-column-gap-default">
+               <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-24a98800" data-id="24a98800" data-element_type="column">
+                  <div class="elementor-widget-wrap elementor-element-populated">
+                     <div class="elementor-element elementor-element-68941e0a elementor-widget__width-initial elementor-widget-tablet__width-initial elementor-widget-mobile__width-initial elementor-widget elementor-widget-rock-logo" data-id="68941e0a" data-element_type="widget" data-widget_type="rock-logo.default">
+                        <div class="elementor-widget-container">
+                           <style type="text/css">.rock-logo{display:flex;align-items:center;position:relative}.rock-logo__first{display:flex;align-items:center}.rock-logo__first>a,.rock-logo__secound>a{display:flex;align-items:center}.rock-logo__secound>a{font-size:28px;line-height:21px;font-weight:700;color:#677389!important}.rock-logo__divider{border-left:solid 1px #aab1bf;height:25px;margin:0 10px}</style>
+                           <div class="rock-logo">
+                              <div class="rock-logo__first">
+                              </div>
+                              <div class="rock-logo__divider"></div>
+                              <div class="rock-logo__secound">
+                                 <a cu="https://rockcontent.com/br/blog/">
+                                 blog </a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="elementor-element elementor-element-23380cae elementor-widget__width-initial elementor-widget-tablet__width-initial elementor-widget-mobile__width-initial elementor-widget elementor-widget-rock-mega-menu" data-id="23380cae" data-element_type="widget" data-widget_type="rock-mega-menu.default">
+                        <div class="elementor-widget-container">
+                           <style type="text/css">.rock-menu__item-a {font-family:inter,Sans-serif;}</style>
+                           <div class="rock-menu-mobile" id="rock-menu-mobile">
+                              <svg onclick="RockOpenCloseMenu(this)" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                 <path d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z"></path>
+                              </svg>
+                           </div>
+                           <div class="rock-menu-container" id="rock-menu-container">
+                              <div class="rock-menu-mobile__close" id="rock-menu-mobile__close">
+                                 <svg onclick="RockOpenCloseMenu(this)" id="rock-menu-mobile__icon-close" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm5 15.538l-3.592-3.548 3.546-3.587-1.416-1.403-3.545 3.589-3.588-3.543-1.405 1.405 3.593 3.552-3.547 3.592 1.405 1.405 3.555-3.596 3.591 3.55 1.403-1.416z"></path>
+                                 </svg>
+                              </div>
+                              <nav id="rock-nav-menu-id" class="rock-nav-menu">
+                                 <ul class="rock-nav-menu__items">
+                                    <li id="menu-item-35765" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-35765">
+                                       <a title="Categorias" class="rock-menu__item-a" href="#">
+                                          Categorias 
+                                          <svg width="11" height="6" viewBox="0 0 11 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                             <path d="M1.5 1L5.5 5L9.5 1" stroke="#171923" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                          </svg>
+                                       </a>
+                                    </li>
+                                    <li id="menu-item-35764" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-35764">
+                                       <a title="Conheça a Rock Content" class="rock-menu__item-a">
+                                          Conheça a Rock Content 
+                                          <svg width="11" height="6" viewBox="0 0 11 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                             <path d="M1.5 1L5.5 5L9.5 1" stroke="#171923" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                          </svg>
+                                       </a>
+                                    </li>
+                                    <li id="menu-item-44595" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-44595">
+                                       <a title="Materiais gratuitos" class="rock-menu__item-a" href="#">
+                                          Materiais gratuitos 
+                                          <svg width="11" height="6" viewBox="0 0 11 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                             <path d="M1.5 1L5.5 5L9.5 1" stroke="#171923" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                          </svg>
+                                       </a>
+                                    </li>
+                                 </ul>
+                              </nav>
+                              <div class="rock-menu-container__footer" id="rock-menu-container__footer">
+                                 <a class="rock-menu-container__btn" href="https://rockcontent.com/br/contato/">Contate nossos especialistas</a>
+                                 <ul class="rock-menu-container__ul">
+                                    <li>
+                                       <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                          <path d="M1.04889 8.11111H2.77778C3.24927 8.11111 3.70146 8.29841 4.03486 8.63181C4.36825 8.96521 4.55556 9.41739 4.55556 9.88889V10.7778C4.55556 11.2493 4.74286 11.7015 5.07625 12.0349C5.40965 12.3683 5.86184 12.5556 6.33333 12.5556C6.80483 12.5556 7.25701 12.7429 7.59041 13.0763C7.92381 13.4097 8.11111 13.8618 8.11111 14.3333V16.9511M5.44444 1.83111V3.22222C5.44444 3.81159 5.67857 4.37682 6.09532 4.79357C6.51207 5.21032 7.0773 5.44444 7.66667 5.44444H8.11111C8.58261 5.44444 9.03479 5.63175 9.36819 5.96514C9.70159 6.29854 9.88889 6.75073 9.88889 7.22222C9.88889 7.69372 10.0762 8.1459 10.4096 8.4793C10.743 8.8127 11.1952 9 11.6667 9C12.1382 9 12.5903 8.8127 12.9237 8.4793C13.2571 8.1459 13.4444 7.69372 13.4444 7.22222C13.4444 6.75073 13.6317 6.29854 13.9651 5.96514C14.2985 5.63175 14.7507 5.44444 15.2222 5.44444H16.168M11.6667 16.5449V14.3333C11.6667 13.8618 11.854 13.4097 12.1874 13.0763C12.5208 12.7429 12.9729 12.5556 13.4444 12.5556H16.168M17 9C17 10.0506 16.7931 11.0909 16.391 12.0615C15.989 13.0321 15.3997 13.914 14.6569 14.6569C13.914 15.3997 13.0321 15.989 12.0615 16.391C11.0909 16.7931 10.0506 17 9 17C7.94943 17 6.90914 16.7931 5.93853 16.391C4.96793 15.989 4.08601 15.3997 3.34315 14.6569C2.60028 13.914 2.011 13.0321 1.60896 12.0615C1.20693 11.0909 1 10.0506 1 9C1 6.87827 1.84285 4.84344 3.34315 3.34315C4.84344 1.84285 6.87827 1 9 1C11.1217 1 13.1566 1.84285 14.6569 3.34315C16.1571 4.84344 17 6.87827 17 9Z" stroke="#818488" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                       </svg>
+                                    </li>
+                                    <li><a class="rock-menu-container__lang" data-lang="EN" href="https://rockcontent.com/">English</a></li>
+                                    <li><a class="rock-menu-container__lang" data-lang="BR" href="https://rockcontent.com/br/">Português</a></li>
+                                    <li><a class="rock-menu-container__lang" data-lang="ES" href="https://rockcontent.com/es/">Español</a></li>
+                                 </ul>
+                              </div>
+                           </div>
+                           <script type="text/javascript">
+                              if(window.addEventListener("load",function(e){if(window.innerWidth>=1024){let e=document.querySelectorAll(".sub-menu.rock-mega-menu");if(0!==e.length){let n=document.getElementById("rock-nav-menu-id").getBoundingClientRect().left;e.forEach(e=>{e.style.marginLeft="-"+n+"px"})}}}),window.innerWidth<=768)function RockOpenCloseMenu(e){let n=e.closest(".elementor-widget-container").querySelector(".rock-menu-container");document.querySelector("body").classList.toggle("rock-body-noscroll"),n.classList.toggle("rock-menu--active")}
+                           </script>
+                        </div>
+                     </div>
+                     <div class="elementor-element elementor-element-8d74782 elementor-widget__width-initial elementor-widget-mobile__width-inherit elementor-hidden-tablet elementor-hidden-mobile elementor-widget elementor-widget-rock-custom-search" data-id="8d74782" data-element_type="widget" data-widget_type="rock-custom-search.default">
+                        <div class="elementor-widget-container">
+                           <style>#rock-custom-seach{display:flex;border:solid 1px #cbd2e0;border-radius:4px}#rock-custom-seach__button{padding:0 10px;display:flex;align-items:center;border:0;border-radius:0;background:#fff}#rock-custom-seach__input{border:0;outline:0;height:35px;padding:0 10px 0 10px;font-size:14px}input#rock-custom-seach__input::placeholder{font-size:14px}</style>
+                           <form action="https://rockcontent.com/br/" role="search" method="get">
+                              <div class="rock-custom-seach" id="rock-custom-seach">
+                              </div>
+                           </form>
+                        </div>
+                     </div>
+                     <div class="elementor-element elementor-element-394a03b8 elementor-widget__width-initial elementor-widget-mobile__width-inherit elementor-hidden-tablet elementor-hidden-phone elementor-widget elementor-widget-rock-lang-switcher" data-id="394a03b8" data-element_type="widget" data-widget_type="rock-lang-switcher.default">
+                        <div class="elementor-widget-container">
+                           <style type="text/css">.rock-lang-selector{display:flex;font-size:14px;color:#25292C;align-items:center;justify-content:center;padding:8px 0 8px 0}.rock-lang-selector a{color:#25292C!important}.rock-lang-selector a:hover{color:#225ED8!important}.rock-lang-selector__svg{position:relative;display:flex}.rock-lang-selector__checkbox{width:100%;position:absolute;height:100%;opacity:0;visibility:hidden;cursor:pointer}.rock-lang-selector__langs{position:absolute;opacity:0;display:none;cursor:pointer;top:100%;padding:10px 12px 5px 12px;background:#fff;border-radius:6px;border:1px solid #E2E7F0}.rock-lang-selector__langs-ul{list-style:none;padding:0;margin:0}.rock-lang-selector__langs-ul>li{margin:0 0 5px 0}.rock-lang-selector:hover .rock-lang-selector__langs{opacity:1;visibility:visible;display:block}.rock-lang-selector__selected{margin:0 0 0 3px}</style>
+                           <div class="rock-lang-selector">
+                              <div class="rock-lang-selector__svg">
+                                 <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1.04889 8.11111H2.77778C3.24927 8.11111 3.70146 8.29841 4.03486 8.63181C4.36825 8.96521 4.55556 9.41739 4.55556 9.88889V10.7778C4.55556 11.2493 4.74286 11.7015 5.07625 12.0349C5.40965 12.3683 5.86184 12.5556 6.33333 12.5556C6.80483 12.5556 7.25701 12.7429 7.59041 13.0763C7.92381 13.4097 8.11111 13.8618 8.11111 14.3333V16.9511M5.44444 1.83111V3.22222C5.44444 3.81159 5.67857 4.37682 6.09532 4.79357C6.51207 5.21032 7.0773 5.44444 7.66667 5.44444H8.11111C8.58261 5.44444 9.03479 5.63175 9.36819 5.96514C9.70159 6.29854 9.88889 6.75073 9.88889 7.22222C9.88889 7.69372 10.0762 8.1459 10.4096 8.4793C10.743 8.8127 11.1952 9 11.6667 9C12.1382 9 12.5903 8.8127 12.9237 8.4793C13.2571 8.1459 13.4444 7.69372 13.4444 7.22222C13.4444 6.75073 13.6317 6.29854 13.9651 5.96514C14.2985 5.63175 14.7507 5.44444 15.2222 5.44444H16.168M11.6667 16.5449V14.3333C11.6667 13.8618 11.854 13.4097 12.1874 13.0763C12.5208 12.7429 12.9729 12.5556 13.4444 12.5556H16.168M17 9C17 10.0506 16.7931 11.0909 16.391 12.0615C15.989 13.0321 15.3997 13.914 14.6569 14.6569C13.914 15.3997 13.0321 15.989 12.0615 16.391C11.0909 16.7931 10.0506 17 9 17C7.94943 17 6.90914 16.7931 5.93853 16.391C4.96793 15.989 4.08601 15.3997 3.34315 14.6569C2.60028 13.914 2.011 13.0321 1.60896 12.0615C1.20693 11.0909 1 10.0506 1 9C1 6.87827 1.84285 4.84344 3.34315 3.34315C4.84344 1.84285 6.87827 1 9 1C11.1217 1 13.1566 1.84285 14.6569 3.34315C16.1571 4.84344 17 6.87827 17 9Z" stroke="#818488" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                 </svg>
+                              </div>
+                              <div class="rock-lang-selector__selected">BR</div>
+                              <div class="rock-lang-selector__langs">
+                                 <ul class="rock-lang-selector__langs-ul">
+                                 </ul>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="elementor-element elementor-element-9e436c9 elementor-widget__width-initial elementor-hidden-tablet elementor-hidden-mobile elementor-align-justify elementor-widget elementor-widget-button" data-id="9e436c9" data-element_type="widget" id="rock-new-btn" data-widget_type="button.default">
+                        <div class="elementor-widget-container">
+                           <div class="elementor-button-wrapper">
+                              <span class="elementor-button-content-wrapper">
+                              <span class="elementor-button-text">Teste grátis</span>
+                              </span>
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
             </div>
-			<div class="my-4 lagbut" style="text-align:center;">
-				<img class="img-fluid" style="max-width: 60%" src="./assets/imgs/guarant.webp">
-			</div>
-          </div>
-        </div>
+         </header>
       </div>
-    </header>	
-	<style>@keyframes pulse {
-	  0% {    transform: scaleX(1)  }
-	  50% {    transform: scale3d(1.05, 1.05, 1.05)  }
-	  to {    transform: scaleX(1)  }
-	}</style>
-	<style>
-		.animado{animation:pulse 1s infinite;}
-		a.button-1657813946622FRFjIW-element {
-		background-color: #00dd00;
-		border-radius: 4px;
-		border: none;
-		color: #ffffff;
-		padding: 16px 32px 16px 32px;
-		font-weight: 600;
-		display: block;
-		width: fit-content;
-		text-align: center;
-		margin: 4vh auto 2vh auto;
-		font-size: 1.49vw;
-		box-sizing: border-box;
-		max-width: 100%;
-		}
-		@media (max-width: 1200px) {
-		a.button-1657813946622FRFjIW-element {
-		font-size: 1.69vw;
-		margin: 2.64vh auto 1.5vh auto
-		}
-		}
-		@media (max-width: 640px) {
-		a.button-1657813946622FRFjIW-element {
-		font-size: 3.94vw;
-		margin: 2vh auto 1vh auto
-		}
-		}
-	</style>
-  </body>
-</html>
+      <div data-elementor-type="single-post" data-elementor-id="34714" class="elementor elementor-34714 elementor-location-single post-2335 post type-post status-publish format-standard has-post-thumbnail hentry category-nao-categorizado">
+         <section class="elementor-section elementor-top-section elementor-element elementor-element-3ca14a73 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="3ca14a73" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+            <div class="elementor-container elementor-column-gap-default">
+               <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-2a20ad68" data-id="2a20ad68" data-element_type="column">
+                  <div class="elementor-widget-wrap elementor-element-populated">
+                     <div class="elementor-element elementor-element-6a7c53d5 elementor-widget__width-initial elementor-widget-mobile__width-inherit elementor-widget elementor-widget-heading" data-id="6a7c53d5" data-element_type="widget" data-widget_type="heading.default">
+                        <div class="elementor-widget-container">
+                           <style>/*! elementor - v3.10.0 - 09-01-2023 */
+                              .elementor-heading-title{padding:0;margin:0;line-height:1}.elementor-widget-heading .elementor-heading-title[class*=elementor-size-]>a{color:inherit;font-size:inherit;line-height:inherit}.elementor-widget-heading .elementor-heading-title.elementor-size-small{font-size:15px}.elementor-widget-heading .elementor-heading-title.elementor-size-medium{font-size:19px}.elementor-widget-heading .elementor-heading-title.elementor-size-large{font-size:29px}.elementor-widget-heading .elementor-heading-title.elementor-size-xl{font-size:39px}.elementor-widget-heading .elementor-heading-title.elementor-size-xxl{font-size:59px}
+                           </style>
+                           <h1 class="elementor-heading-title elementor-size-default">Conheça quais são as 10 melhores redes sociais de bate-papo e 6 apps de conversa</h1>
+                        </div>
+                     </div>
+                     <div class="elementor-element elementor-element-50566359 elementor-widget__width-initial elementor-widget-mobile__width-inherit elementor-widget elementor-widget-heading" data-id="50566359" data-element_type="widget" data-widget_type="heading.default">
+                        <div class="elementor-widget-container">
+                           <p class="elementor-heading-title elementor-size-default">Entre as principais redes sociais de bate-papo, podemos citar: Messenger, Telegram, Signal, LiveChat, Happyfox, Jivochat, My Live Chat e Slack. Elas podem aproximar você de familiares, amigos, clientes e também da sua equipe de trabalho, servindo para atender às mais diferentes necessidades.</p>
+                        </div>
+                     </div>
+                     <div class="elementor-element elementor-element-b86b046 elementor-widget__width-initial elementor-widget-mobile__width-inherit elementor-widget elementor-widget-rock-post-meta" data-id="b86b046" data-element_type="widget" data-widget_type="rock-post-meta.default">
+                        <div class="elementor-widget-container">
+                           <div class="rock-grid__blog-meta">
+                              <div class="rock-grid__blog-author author--inline">
+                                 <a cu="https://rockcontent.com/br/blog/author/redator/" rel="author">
+                                 <span class="rock-grid__blog-author-name">Redator Rock Content</span>
+                                 </a>
+                                 <p class="rock-grid__blog-author-bio"></p>
+                              </div>
+                              <div class="rock-grid__blog-date">
+                                 <time datetime="2019-01-21">21 jan, 19</time>
+                                 |
+                                 Leitura: 13min 
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="elementor-element elementor-element-90d7fc8 elementor-widget elementor-widget-image" data-id="90d7fc8" data-element_type="widget" data-widget_type="image.default">
+                        <div class="elementor-widget-container">
+                           <style>/*! elementor - v3.10.0 - 09-01-2023 */
+                              .elementor-widget-image{text-align:center}.elementor-widget-image a{display:inline-block}.elementor-widget-image a img[src$=".svg"]{width:48px}.elementor-widget-image img{vertical-align:middle;display:inline-block}
+                           </style>
+                           <picture class="rock-hero-img attachment-large size-large wp-image-65399">
+                              <source type="image/webp" srcset="https://rockcontent.com/br/wp-content/uploads/sites/2/2023/01/Buzz-Marketing-1024x538.png.webp 1024w, https://rockcontent.com/br/wp-content/uploads/sites/2/2023/01/Buzz-Marketing-300x158.png.webp 300w, https://rockcontent.com/br/wp-content/uploads/sites/2/2023/01/Buzz-Marketing-768x403.png.webp 768w, https://rockcontent.com/br/wp-content/uploads/sites/2/2023/01/Buzz-Marketing-150x79.png.webp 150w, https://rockcontent.com/br/wp-content/uploads/sites/2/2023/01/Buzz-Marketing.png.webp 1200w" sizes="(max-width: 800px) 100vw, 800px">
+                              <img width="800" height="420" src="https://rockcontent.com/br/wp-content/uploads/sites/2/2023/01/Buzz-Marketing-1024x538.png" alt="" srcset="https://rockcontent.com/br/wp-content/uploads/sites/2/2023/01/Buzz-Marketing-1024x538.png 1024w, https://rockcontent.com/br/wp-content/uploads/sites/2/2023/01/Buzz-Marketing-300x158.png 300w, https://rockcontent.com/br/wp-content/uploads/sites/2/2023/01/Buzz-Marketing-768x403.png 768w, https://rockcontent.com/br/wp-content/uploads/sites/2/2023/01/Buzz-Marketing-150x79.png 150w, https://rockcontent.com/br/wp-content/uploads/sites/2/2023/01/Buzz-Marketing.png 1200w" sizes="(max-width: 800px) 100vw, 800px">
+                           </picture>
+                        </div>
+                     </div>
+                     <section class="elementor-section elementor-inner-section elementor-element elementor-element-2a5256ad rock-post-content elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="2a5256ad" data-element_type="section">
+                        <div class="elementor-container elementor-column-gap-default">
+                           <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-4d78d2c7 elementor-hidden-tablet elementor-hidden-phone" data-id="4d78d2c7" data-element_type="column">
+                              <div class="elementor-widget-wrap"></div>
+                           </div>
+                           <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-59e66ad8" data-id="59e66ad8" data-element_type="column">
+                              <div class="elementor-widget-wrap elementor-element-populated">
+                                 <div class="elementor-element elementor-element-4d14d151 elementor-widget elementor-widget-theme-post-content" data-id="4d14d151" data-element_type="widget" data-widget_type="theme-post-content.default">
+                                    <div class="elementor-widget-container">
+                                       <div class="rock-convert-banner">
+                                          <a cu="https://materiais.rockcontent.com/jam-session-galileu-nogueira?utm_medium=rock-convert&amp;utm_source=blog&amp;utm_campaign=rock-convert&amp;blogconversionurl=https://rockcontent.com/br/blog/cta/ptbr-lead-jam-session-conteudo-e-branding-com-galileu-nogueira/&amp;blogconversionpath=RockConvert&amp;blogconversiondate=03/13/2023" target="_blank" class="rock-convert-cta-link" data-cta-id="66293" data-cta-title="[PTBR] [LEAD] Jam Session: Conteúdo e Branding com Galileu Nogueira">
+                                             <picture class="attachment-full size-full" title="[PTBR] [LEAD] Jam Session: Conteúdo e Branding com Galileu Nogueira">
+                                                <source type="image/webp" data-lazy-srcset="https://rockcontent.com/br/wp-content/uploads/sites/2/2023/03/Banner-Fino-Rock-Convert-2.png.webp 2500w, https://rockcontent.com/br/wp-content/uploads/sites/2/2023/03/Banner-Fino-Rock-Convert-2-300x43.png.webp 300w, https://rockcontent.com/br/wp-content/uploads/sites/2/2023/03/Banner-Fino-Rock-Convert-2-1024x147.png.webp 1024w, https://rockcontent.com/br/wp-content/uploads/sites/2/2023/03/Banner-Fino-Rock-Convert-2-768x110.png.webp 768w, https://rockcontent.com/br/wp-content/uploads/sites/2/2023/03/Banner-Fino-Rock-Convert-2-1536x220.png.webp 1536w, https://rockcontent.com/br/wp-content/uploads/sites/2/2023/03/Banner-Fino-Rock-Convert-2-2048x293.png.webp 2048w, https://rockcontent.com/br/wp-content/uploads/sites/2/2023/03/Banner-Fino-Rock-Convert-2-150x21.png.webp 150w" srcset="https://rockcontent.com/br/wp-content/uploads/sites/2/2023/03/Banner-Fino-Rock-Convert-2.png.webp 2500w, https://rockcontent.com/br/wp-content/uploads/sites/2/2023/03/Banner-Fino-Rock-Convert-2-300x43.png.webp 300w, https://rockcontent.com/br/wp-content/uploads/sites/2/2023/03/Banner-Fino-Rock-Convert-2-1024x147.png.webp 1024w, https://rockcontent.com/br/wp-content/uploads/sites/2/2023/03/Banner-Fino-Rock-Convert-2-768x110.png.webp 768w, https://rockcontent.com/br/wp-content/uploads/sites/2/2023/03/Banner-Fino-Rock-Convert-2-1536x220.png.webp 1536w, https://rockcontent.com/br/wp-content/uploads/sites/2/2023/03/Banner-Fino-Rock-Convert-2-2048x293.png.webp 2048w, https://rockcontent.com/br/wp-content/uploads/sites/2/2023/03/Banner-Fino-Rock-Convert-2-150x21.png.webp 150w" data-lazy-sizes="(max-width: 2500px) 100vw, 2500px" sizes="(max-width: 2500px) 100vw, 2500px">
+                                                <img width="2500" height="358" src="https://rockcontent.com/br/wp-content/uploads/sites/2/2023/03/Banner-Fino-Rock-Convert-2.png" alt="" data-lazy-srcset="https://rockcontent.com/br/wp-content/uploads/sites/2/2023/03/Banner-Fino-Rock-Convert-2.png 2500w, https://rockcontent.com/br/wp-content/uploads/sites/2/2023/03/Banner-Fino-Rock-Convert-2-300x43.png 300w, https://rockcontent.com/br/wp-content/uploads/sites/2/2023/03/Banner-Fino-Rock-Convert-2-1024x147.png 1024w, https://rockcontent.com/br/wp-content/uploads/sites/2/2023/03/Banner-Fino-Rock-Convert-2-768x110.png 768w, https://rockcontent.com/br/wp-content/uploads/sites/2/2023/03/Banner-Fino-Rock-Convert-2-1536x220.png 1536w, https://rockcontent.com/br/wp-content/uploads/sites/2/2023/03/Banner-Fino-Rock-Convert-2-2048x293.png 2048w, https://rockcontent.com/br/wp-content/uploads/sites/2/2023/03/Banner-Fino-Rock-Convert-2-150x21.png 150w" data-lazy-sizes="(max-width: 2500px) 100vw, 2500px" data-lazy-src="https://rockcontent.com/br/wp-content/uploads/sites/2/2023/03/Banner-Fino-Rock-Convert-2.png" data-ll-status="loaded" class="entered lazyloaded" sizes="(max-width: 2500px) 100vw, 2500px" srcset="https://rockcontent.com/br/wp-content/uploads/sites/2/2023/03/Banner-Fino-Rock-Convert-2.png 2500w, https://rockcontent.com/br/wp-content/uploads/sites/2/2023/03/Banner-Fino-Rock-Convert-2-300x43.png 300w, https://rockcontent.com/br/wp-content/uploads/sites/2/2023/03/Banner-Fino-Rock-Convert-2-1024x147.png 1024w, https://rockcontent.com/br/wp-content/uploads/sites/2/2023/03/Banner-Fino-Rock-Convert-2-768x110.png 768w, https://rockcontent.com/br/wp-content/uploads/sites/2/2023/03/Banner-Fino-Rock-Convert-2-1536x220.png 1536w, https://rockcontent.com/br/wp-content/uploads/sites/2/2023/03/Banner-Fino-Rock-Convert-2-2048x293.png 2048w, https://rockcontent.com/br/wp-content/uploads/sites/2/2023/03/Banner-Fino-Rock-Convert-2-150x21.png 150w">
+                                             </picture>
+                                             <noscript>
+                                                <picture class="attachment-full size-full" title="[PTBR] [LEAD] Jam Session: Conteúdo e Branding com Galileu Nogueira">
+                                                   <source type="image/webp" srcset="https://rockcontent.com/br/wp-content/uploads/sites/2/2023/03/Banner-Fino-Rock-Convert-2.png.webp 2500w, https://rockcontent.com/br/wp-content/uploads/sites/2/2023/03/Banner-Fino-Rock-Convert-2-300x43.png.webp 300w, https://rockcontent.com/br/wp-content/uploads/sites/2/2023/03/Banner-Fino-Rock-Convert-2-1024x147.png.webp 1024w, https://rockcontent.com/br/wp-content/uploads/sites/2/2023/03/Banner-Fino-Rock-Convert-2-768x110.png.webp 768w, https://rockcontent.com/br/wp-content/uploads/sites/2/2023/03/Banner-Fino-Rock-Convert-2-1536x220.png.webp 1536w, https://rockcontent.com/br/wp-content/uploads/sites/2/2023/03/Banner-Fino-Rock-Convert-2-2048x293.png.webp 2048w, https://rockcontent.com/br/wp-content/uploads/sites/2/2023/03/Banner-Fino-Rock-Convert-2-150x21.png.webp 150w" sizes="(max-width: 2500px) 100vw, 2500px"/>
+                                                   <img width="2500" height="358" src="https://rockcontent.com/br/wp-content/uploads/sites/2/2023/03/Banner-Fino-Rock-Convert-2.png" alt="" srcset="https://rockcontent.com/br/wp-content/uploads/sites/2/2023/03/Banner-Fino-Rock-Convert-2.png 2500w, https://rockcontent.com/br/wp-content/uploads/sites/2/2023/03/Banner-Fino-Rock-Convert-2-300x43.png 300w, https://rockcontent.com/br/wp-content/uploads/sites/2/2023/03/Banner-Fino-Rock-Convert-2-1024x147.png 1024w, https://rockcontent.com/br/wp-content/uploads/sites/2/2023/03/Banner-Fino-Rock-Convert-2-768x110.png 768w, https://rockcontent.com/br/wp-content/uploads/sites/2/2023/03/Banner-Fino-Rock-Convert-2-1536x220.png 1536w, https://rockcontent.com/br/wp-content/uploads/sites/2/2023/03/Banner-Fino-Rock-Convert-2-2048x293.png 2048w, https://rockcontent.com/br/wp-content/uploads/sites/2/2023/03/Banner-Fino-Rock-Convert-2-150x21.png 150w" sizes="(max-width: 2500px) 100vw, 2500px"/>
+                                                </picture>
+                                             </noscript>
+                                          </a>
+                                       </div>
+                                       <p>Você é da época do MIRC? Chegou a atualizar o “nick” do MSN? Entrou em diferentes salas do chat da UOL? Mesmo quando ainda era tudo mato na internet, <strong>as redes sociais de bate-papo já tinham relevância</strong>.</p>
+                                       <p>Sem dúvidas, a chegada do <a cu="https://rockcontent.com/br/blog/marketing-no-whatsapp/" target="_blank" rel="noreferrer noopener">WhatsApp</a> mudou esse jogo ainda mais, e a popularização da utilização desses canais por marcas também trouxe <strong>novas necessidades</strong>.</p>
+                                       <p>Assim, atualmente, são diversas as opções de chats oferecidas pelo mercado. </p>
+                                       <p>Com diferentes funcionalidades, entregas e objetivos, elas atendem a pessoas que querem conversar com amigos e familiares, permitem às marcas estabelecer um contato mais íntimo com seus clientes e também proporcionam às empresas uma simplificação na.</p>
+                                       <p>Neste texto, você verá 8 opções de redes sociais de bate-papo e conhecerá mais a fundo o que cada uma tem a oferecer. Confira!</p>
+                                       <p> </p>
+                                       <div class="rock-post-index" id="rock-post-index">
+                                          <ul class="rock-post-index__ul" id="rock-post-index__ul">
+                                             <li data-id="0" onclick="scrollToTitle(0)">Qual a importância das redes sociais de bate-papo?</li>
+                                             <li data-id="1" onclick="scrollToTitle(1)">Quais as 10 principais redes sociais de bate-papo da internet?</li>
+                                             <li data-id="2" onclick="scrollToTitle(2)">Aplicativos para bate-papo no Android e iOS</li>
+                                             <li data-id="3" onclick="scrollToTitle(3)">Conclusão</li>
+                                          </ul>
+                                       </div>
+                                       <br>
+                                       <p></p>
+                                       <div class="rock-convert-download">
+                                          <div class="rock-convert-download-container">
+                                             <p class="rock-convert-download-container-title">Faça o download deste post inserindo seu e-mail abaixo</p>
+                                          </div>
+                                       </div>
+                                       <span id="rock-0"></span>
+                                       <h2>Qual a importância das redes sociais de bate-papo?</h2>
+                                       <p>Entre outros objetivos, podemos dizer que um dos principais propósitos das <a cu="https://rockcontent.com/br/blog/tudo-sobre-redes-sociais/" target="_blank" rel="noreferrer noopener">redes sociais</a> de bate-papo é <strong>aproximar pessoas e permitir conexões</strong> mesmo quando existem longas distâncias ou falta de tempo.</p>
+                                       <p>Essa foi uma das maiores mudanças que canais como MSN, Orkut e outros precursores trouxeram.</p>
+                                       <p>Com o tempo, as marcas também se apropriaram desses canais e viram neles a oportunidade perfeita de criar um <a cu="https://rockcontent.com/br/blog/relacionamento-com-clientes/" target="_blank" rel="noreferrer noopener"><strong>relacionamento mais próximo com seus clientes</strong></a>.</p>
+                                       <p>Outro uso comum desses canais é na <strong>integração de equipes de trabalho</strong> dentro das empresas. Elas são ótimas ferramentas para a troca de arquivos e informações — e não só para quem atua no modelo home office.</p>
+                                       <p>Mesmo equipes que trabalham com proximidade física podem <strong>ganhar tempo e evitar distrações</strong> com o auxílio da tecnologia e de softwares que permitam essa integração rápida e eficiente.</p>
+                                       <p>Por isso, é essencial conhecer as diferentes opções de aplicativos oferecidos pelo mercado e, assim, identificar qual o mais adequado ao seu objetivo — seja ele pessoal, seja profissional.</p>
+                                       <span id="rock-1"></span>
+                                       <h2>Quais as 10 principais redes sociais de bate-papo da internet?</h2>
+                                       <p><strong>As redes sociais de bate-papo vão muito além do WhatsApp</strong>. Não acredita? Então continue a leitura e conheça 8 diferentes opções que podem ser úteis tanto na sua vida profissional quanto na pessoal.</p>
+                                       <h3>1. Messenger</h3>
+                                       <p>Provavelmente, o Messenger é o mais conhecido entre as redes sociais de bate-papo aqui listadas.</p>
+                                       <p>Inicialmente, tratava-se do chat do <a cu="https://rockcontent.com/br/blog/facebook/" target="_blank" rel="noreferrer noopener">Facebook</a>. Com o tempo, a empresa de Mark Zuckerberg passou a tratá-lo como <strong>uma rede social à parte</strong> e, hoje em dia, é preciso ter instalado o aplicativo próprio para o acesso mobile.</p>
+                                       <p>As funcionalidades são diversas e incluem o envio de mensagens de texto, imagens, vídeos e áudio, além de fazer ligações para quem forneceu o número de celular ao Facebook.</p>
+                                       <p>O Messenger é uma boa opção para quando <strong>o bate-papo é relacionado a assuntos pessoais</strong>, uma vez que você já tem a lista de todos os seus amigos ali.</p>
+                                       <p>Para assuntos profissionais, existem as seguintes desvantagens:</p>
+                                       <ul>
+                                          <li>para uso mobile, existe a obrigação de um segundo aplicativo;</li>
+                                          <li>para uso no desktop, acessando o Messenger via Facebook, você não necessariamente vai ter seus contatos profissionais adicionados e, além disso, sabemos como o feed do Facebook pode contribuir para a <a cu="https://rockcontent.com/br/blog/procrastinacao/" target="_blank" rel="noreferrer noopener">procrastinação</a>.</li>
+                                       </ul>
+                                       <p>A seguir, trazemos outras opções mais interessantes para essa finalidade.</p>
+                                       <h3>2. Telegram</h3>
+                                       <p>Desta nossa lista, o <a cu="https://telegram.org/" target="_blank" rel="noreferrer noopener">Telegram</a> talvez seja outro conhecido seu. O aplicativo ganhou popularidade no Brasil quando uma decisão judicial ameaçou tirar o WhatsApp do ar.</p>
+                                       <p>A partir daí, ele acabou sendo adotado por alguns usuários brasileiros como primeira opção de chat e <strong>ficou famoso por ter disseminado o uso dos stickers</strong> — funcionalidade que recentemente também foi incluída na rede social de bate-papo de Mark Zuckerberg.</p>
+                                       <p>Ainda que o WhatsApp seja o campeão em número de usuários no Brasil, o <a cu="https://rockcontent.com/br/blog/telegram/" target="_blank" rel="noreferrer noopener" aria-label="Telegram (abre numa nova aba)">Telegram</a> <strong>se sobressai </strong>em alguns quesitos. Veja alguns deles:</p>
+                                       <ul>
+                                          <li><a cu="https://rockcontent.com/br/blog/cloud-computing/" target="_blank" rel="noreferrer noopener">armazenamento em nuvem</a> de mensagens e arquivos trocados, o que ocupa menos memória do celular;</li>
+                                          <li>possibilidade de envio de arquivos superior aos 60 MB do WhatsApp;</li>
+                                          <li>um nome de usuário permite adicionar contatos sem a obrigação de incluir o telefone da pessoa na lista do celular;</li>
+                                          <li>criação de grupos com até 200.000 participantes, algo a que marcas e criadores de conteúdo têm aderido para ter maior proximidade com os fãs. Aproveite e entre em <a cu="https://t.me/rockcontent_br">nosso grupo exclusivo</a>.</li>
+                                       </ul>
+                                       <h3>3. Signal</h3>
+                                       <p>O <a cu="https://signal.org/pt_BR" target="_blank" rel="noreferrer noopener">Signal</a> é um aplicativo de bate-papo que permite a troca de mensagens de texto, áudio, vídeo e GIFs.</p>
+                                       <p>Ele pode ser acessado por meio de smartphones e também conta com uma versão para desktop. Assim como o WhatsApp, ele também se utiliza do <strong>número de celular para identificar os usuários</strong>. O chat pode ser feito individualmente ou em grupo.</p>
+                                       <p>Por meio de uma rede wi-fi ou de dados móveis, também é possível fazer ligações gratuitas por áudio e vídeo, até mesmo internacionais.</p>
+                                       <p>As mensagens são todas encriptadas, o que garante <a cu="https://rockcontent.com/seguranca-e-privacidade-de-dados/" target="_blank" rel="noreferrer noopener">a segurança e a privacidade dos usuários</a>. Outro diferencial do aplicativo é o fato de ser <em>open source</em>, o que significa que os próprios usuários podem fazer alterações para melhorar a funcionalidade do software.</p>
+                                       <h3>4. LiveChat</h3>
+                                       <p>O <a cu="https://www.livechatinc.com/pt/" target="_blank" rel="noreferrer noopener">LiveChat</a> é um software de atendimento ao cliente criado em 2002 e que hoje tem mais de 27.000 clientes pagantes ao redor do mundo. No modelo <a cu="https://rockcontent.com/br/blog/saas/" target="_blank" rel="noreferrer noopener">Software as a Service (SaaS)</a>, o programa <strong>reúne em um único lugar mensagens que geralmente chegam por meio de diferentes canais</strong>, como e-mail, redes sociais e chats em websites.</p>
+                                       <p>Além de auxiliar no gerenciamento desse atendimento, o software disponibiliza diversas <strong>funcionalidades analíticas</strong>, como a <a cu="https://rockcontent.com/br/blog/taxa-de-conversao/" target="_blank" rel="noreferrer noopener">taxa de conversão</a> em vendas de um lead conquistado por meio de um chat online.</p>
+                                       <div class="rock-post-biblioteca">
+                                          <ul>
+                                             <li><a cu="https://rockcontent.com/br/blog/redes-sociais-antigas/" target="_blank" rel="noreferrer noopener">Redes Sociais antigas: saiba quais foram as principais e como elas impactaram o Marketing de hoje</a></li>
+                                             <li><a cu="https://rockcontent.com/br/blog/as-maiores-redes-sociais/" target="_blank" rel="noreferrer noopener">As 10 Redes Sociais mais usadas no Brasil em 2022</a></li>
+                                             <li><a cu="https://rockcontent.com/br/blog/calendario-de-publicacoes-para-redes-sociais-saiba-como-montar-o-seu/" target="_blank" rel="noreferrer noopener">Calendário de Publicações para Redes Sociais: saiba como montar o seu</a></li>
+                                          </ul>
+                                       </div>
+                                       <h3>5. Happyfox</h3>
+                                       <p>O <a cu="https://happyfoxchat.com/" target="_blank" rel="noreferrer noopener">HappyFox</a> é um software de suporte ao cliente e atua de forma semelhante ao LiveChat. Porém, uma funcionalidade a mais dessa plataforma é a criação de tíquetes, em que é possível <strong>gerenciar diferentes contatos entre diferentes colaboradores</strong> de forma mais simplificada.</p>
+                                       <p>A plataforma se vende como “fácil e simples” de usar, o que é verdade, especialmente com relação ao seu layout bastante enxuto.</p>
+                                       <p>O HappyFox também permite a integração com email e outros canais para a coleta de interações. É possível testar a versão gratuita antes de adquirir o modelo pago.</p>
+                                       <h3>6. Jivochat</h3>
+                                       <p>Quer um único gerenciador de atendimentos? Então o <a cu="https://www.jivochat.com.br/" target="_blank" rel="noreferrer noopener">Jivochat</a> pode ser uma boa opção. Por meio dele, é possível responder a clientes que entraram em contato por meio de chat online, email, redes sociais e até mesmo via telefone. Além disso, também é possível integrá-lo a outros aplicativos, como o Messenger.</p>
+                                       <p>Com um layout que reduz distrações e fornece diferentes ferramentas de forma clara e direta, o Jivochat também pode ser usado no gerenciamento de reservas para quem trabalha na <strong>área hoteleira</strong>.</p>
+                                       <p>Quando a equipe se encontra suficientemente madura, é possível até mesmo melhorar processos e <strong>aprimorar o que é oferecido como </strong><a cu="https://rockcontent.com/br/blog/customer-experience/" target="_blank" rel="noreferrer noopener"><strong>experiência ao cliente</strong></a>.</p>
+                                       <p>Com a atenção devida às reclamações recebidas, o time ganha mais agilidade para respondê-las e corrigi-las.</p>
+                                       <h3>7. My Live Chat</h3>
+                                       <p>O <a cu="https://www.mylivechat.com/" target="_blank" rel="noreferrer noopener">My Live Chat</a> é uma <strong>opção gratuita</strong> que permite a inclusão de uma caixa de diálogo no seu website por meio de um simples código HTML.</p>
+                                       <p>Automaticamente, você já permite que seus visitantes entrem em contato por meio desse chat para saber mais sobre seus produtos ou serviços.</p>
+                                       <p>Apesar de ser muito útil para quem está começando um negócio e não pode fazer grandes investimentos, existem limitações nesse chat, como acontece com a maioria das versões gratuitas.</p>
+                                       <p>A principal delas é a ausência de um centro de gerenciamento e integração das mensagens desse canal com as de outros, como email e redes sociais.</p>
+                                       <h3>8. Slack</h3>
+                                       <p>O <a cu="https://slack.com/intl/pt-br/" target="_blank" rel="noreferrer noopener">Slack</a> é uma plataforma muito popular na comunicação interna de empresas e se vende como um <strong>canal capaz de aumentar a produtividade</strong> de uma equipe.</p>
+                                       <p>A centralização de mensagens, o envio de arquivos e a possibilidade de criação de diferentes grupos são realmente bastante úteis para quem precisa compartilhar diversas informações e referências ao longo do dia.</p>
+                                       <p>Esses times podem ser organizados de acordo com equipes, projetos, clientes ou qualquer outra necessidade. Esse é um dos motivos que fazem com que o Slack seja o queridinho da comunicação interna em agências de <a cu="https://rockcontent.com/br/blog/publicidade/" target="_blank" rel="noreferrer noopener">publicidade</a>, por exemplo, em que é comum que diferentes times atuem com diferentes clientes.</p>
+                                       <p>Outra vantagem do software é a possibilidade de entrar em um grupo ou sair sempre que necessário, o que não acontece nas sequências de emails. Além disso, também é possível limitar conversas paralelas sobre assuntos desviantes dentro do grupo.</p>
+                                       <h3>9. Meet do Google</h3>
+                                       <p>Entre as melhores redes sociais para conversar que podem ser usadas na hora de conversar com quem você precisa, o <a cu="https://meet.google.com/?pli=1" rel="noreferrer noopener" target="_blank">Google Meet</a> não poderia ficar de fora.</p>
+                                       <p>O Meet oferece recursos avançados como compartilhamento de tela, gravação de chamadas, mensagens de bate-papo, compartilhamento de materiais e muitos outros recursos importantes com a intenção de ter uma experiência de comunicação ainda mais eficiente.</p>
+                                       <p>Para tanto, os usuários podem criar salas de conversa privadas e convidar outras pessoas que estejam a fim de conversar. Esses espaços virtuais são seguros e oferecem opções como tela dividida, recursos de áudio e vídeo, envio de arquivos e muito mais.</p>
+                                       <p>Os usuários também podem adicionar outras pessoas às salas de conversa e compartilhar lembretes a fim de avisar a todos sobre reuniões importantes. O Google Meet também apresenta alternativas de <a cu="https://rockcontent.com/br/blog/ferramenta-de-colaboracao/" rel="noreferrer noopener" target="_blank">colaboração</a> no intuito de compartilhar documentos, trabalhar em projetos em grupo, conversar pela internet e outros recursos importantes para as atividades profissionais.</p>
+                                       <h3>10. Microsoft Teams</h3>
+                                       <p>Já o <a cu="https://www.microsoft.com/pt-br/microsoft-teams/group-chat-software/" rel="noreferrer noopener" target="_blank">Microsoft Teams</a> está na nossa lista por conta das possibilidades que essa ferramenta de colaboração pode oferecer. Ele fornece vários recursos de comunicação, como chat, videoconferência, compartilhamento de arquivos e de tarefas. Isso traz mais conforto para que as pessoas mantenham contato e trabalhem em conjunto mesmo durante o home office.</p>
+                                       <p>Além disso, o Teams é projetado para ser muito fácil de usar, pois apresenta um painel intuitivo onde os usuários podem encontrar todos os recursos de bate-papo.</p>
+                                       <p>Essa ferramenta ainda possibilita a criação de grupos de trabalho, onde as pessoas podem compartilhar ideias, discutir projetos e manter-se informadas sobre as últimas atualizações.</p>
+                                       <p>Outro importante diferencial é que o Microsoft Teams tem integração com outras ferramentas da Microsoft — como o Outlook, o Word e o Excel, por exemplo — permitindo que os usuários compartilhem conteúdos com mais facilidade e diretamente na plataforma.</p>
+                                       <div class="rock-convert-banner">
+                                          <a cu="https://materiais.rockcontent.com/kit-marketing-redes-sociais?utm_medium=rock-convert&amp;blogconversionurl=https://rockcontent.com/br/blog/redes-sociais-de-bate-papo/&amp;blogconversionpath=RockConvert&amp;blogconversiondate=03/13/2023" target="_blank" class="rock-convert-cta-link" data-cta-id="34856" data-cta-title="[PT] Kit de Marketing nas Redes Sociais">
+                                             <picture class="attachment-full size-full" title="[PT] Kit de Marketing nas Redes Sociais">
+                                                <source type="image/webp" data-lazy-srcset="https://rockcontent.com/br/wp-content/uploads/sites/2/2021/02/Kit-Marketing-nas-Redes-Sociais.png.webp 750w, https://rockcontent.com/br/wp-content/uploads/sites/2/2021/02/Kit-Marketing-nas-Redes-Sociais-300x80.png.webp 300w" srcset="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20750%20201'%3E%3C/svg%3E" data-lazy-sizes="(max-width: 750px) 100vw, 750px">
+                                                <img width="750" height="201" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20750%20201'%3E%3C/svg%3E" alt="" data-lazy-srcset="https://rockcontent.com/br/wp-content/uploads/sites/2/2021/02/Kit-Marketing-nas-Redes-Sociais.png 750w, https://rockcontent.com/br/wp-content/uploads/sites/2/2021/02/Kit-Marketing-nas-Redes-Sociais-300x80.png 300w" data-lazy-sizes="(max-width: 750px) 100vw, 750px" data-lazy-src="https://rockcontent.com/br/wp-content/uploads/sites/2/2021/02/Kit-Marketing-nas-Redes-Sociais.png">
+                                             </picture>
+                                             <noscript>
+                                                <picture class="attachment-full size-full" title="[PT] Kit de Marketing nas Redes Sociais">
+                                                   <source type="image/webp" srcset="https://rockcontent.com/br/wp-content/uploads/sites/2/2021/02/Kit-Marketing-nas-Redes-Sociais.png.webp 750w, https://rockcontent.com/br/wp-content/uploads/sites/2/2021/02/Kit-Marketing-nas-Redes-Sociais-300x80.png.webp 300w" sizes="(max-width: 750px) 100vw, 750px"/>
+                                                   <img width="750" height="201" src="https://rockcontent.com/br/wp-content/uploads/sites/2/2021/02/Kit-Marketing-nas-Redes-Sociais.png" alt="" srcset="https://rockcontent.com/br/wp-content/uploads/sites/2/2021/02/Kit-Marketing-nas-Redes-Sociais.png 750w, https://rockcontent.com/br/wp-content/uploads/sites/2/2021/02/Kit-Marketing-nas-Redes-Sociais-300x80.png 300w" sizes="(max-width: 750px) 100vw, 750px"/>
+                                                </picture>
+                                             </noscript>
+                                          </a>
+                                       </div>
+                                       <span id="rock-2"></span>
+                                       <h2>Aplicativos para bate-papo no Android e iOS</h2>
+                                       <p>Ter boas alternativas de aplicativos para usar na hora de conversar com os amigos, clientes, funcionários e fornecedores é fundamental.</p>
+                                       <p>Assim, você tem ferramentas de comunicação poderosas a fim de agilizar a troca de informações e garantir sucesso nas mais diversas áreas. Abaixo, listamos várias opções de apps de conversa. Continue a leitura e confira!</p>
+                                       <h3>WhatsApp</h3>
+                                       <p>Um dos principais aplicativos para bate-papo disponível tanto para o iOS quanto para o Android é o <a cu="https://www.whatsapp.com/?lang=pt_br" rel="noreferrer noopener" target="_blank">WhatsApp</a>. Ele pode servir ao objetivo de trocar mensagens rápidas, fazer chamadas de áudio e vídeo e até na hora de enviar documentos importantes. Nesse sentido, há opção para uso pessoal, para você falar com os amigos, e também para empresas, com o WhatsApp Business.</p>
+                                       <p>Essa última alternativa representa uma ótima ferramenta para o cotidiano da empresa. Por exemplo, é possível criar um grupo com a intenção de repassar informações importantes acerca do trabalho. Assim, os colaboradores ficam cientes de tudo o que está acontecendo de importante.</p>
+                                       <p>Também existem muitos fornecedores que utilizam tal recurso a fim de dialogar com os negócios. Dessa forma, pode ser importante na hora de realizar pedidos e garantir um bom relacionamento com os fornecedores.</p>
+                                       <p>Da mesma forma, é possível utilizá-lo com o objetivo de fazer vendas e nas estratégias de marketing, enviando conteúdos e realizando atendimentos. Essa ferramenta é gratuita e tem potencial para gerar muitos benefícios, como:</p>
+                                       <ul>
+                                          <li><a cu="https://rockcontent.com/br/blog/o-que-e-comunicacao-assertiva/" rel="noreferrer noopener" target="_blank"><strong>simplicidade na comunicação</strong></a><strong>;</strong></li>
+                                          <li><strong>facilidade na hora de encaminhar mensagens;</strong></li>
+                                          <li><strong>opções para compartilhamento de arquivos;</strong></li>
+                                          <li><strong>segurança para todas as partes.</strong></li>
+                                       </ul>
+                                       <p>Portanto, vale incorporar o WhatsApp em sua rotina, seja para a área profissional, seja para fins pessoais.</p>
+                                       <h3>Viber</h3>
+                                       <p>Outro aplicativo que você pode usar com o objetivo de bater papo ou trocar informações importantes é o <a cu="https://www.viber.com/pt-pt/" rel="noreferrer noopener" target="_blank">Viber</a>. Ele oferece a opção de envios de mensagens instantâneas, utilizando um sistema de multiplataforma que vai permitir o encaminhamento de textos, fotos, áudios e chamadas de voz e por vídeo.</p>
+                                       <p>Nesse sentido, é possível fazer ligações internacionais para outros usuários do Viber. Assim como o WhatsApp, o Viber possibilita a criação de grupos. É possível ter até 250 pessoas fazendo parte dele. Além disso, é permitido o envio de fotos, vídeos e textos, possibilitando a troca de informações eficientemente no grupo.</p>
+                                       <p><strong>Ele também disponibiliza recursos de segurança, tendo </strong><a cu="https://rockcontent.com/br/blog/putty/" rel="noreferrer noopener" target="_blank"><strong>criptografia</strong></a><strong> de ponta a ponta</strong>. Assim, é possível assegurar alta proteção na hora de trocar mensagens, fazer ligações e ter uma ótima experiência utilizando esse app.</p>
+                                       <p>Há ainda um recurso que permite a criação de chatbots, facilitando o atendimento. Nessa mesma linha, também é factível programar mensagens. Há ainda a opção de visualizar estatísticas a fim de compreender como o Viber está sendo usado.</p>
+                                       <h3>LINE</h3>
+                                       <p>O <a cu="https://line.me/en/" rel="noreferrer noopener" target="_blank">LINE</a> é mais um aplicativo que pode ser útil para conversar com os amigos ou na hora de manter uma boa comunicação na empresa. Há diversas funcionalidades comuns para esse tipo de app, como envio de fotos, troca de mensagens de texto, chamadas de voz e de vídeo, encaminhamento de arquivos e de localização, jogos e muito mais.</p>
+                                       <p>Além disso, o LINE permite que você faça videoconferências e crie grupos para conversar. Assim, pode ser uma ótima opção também para o uso profissional. Nesse sentido, é preciso engajar as pessoas para instalarem o aplicativo e aproveitar todas as funcionalidades que esse aplicativo oferece.</p>
+                                       <p>Há ainda recursos de segurança visando garantir que todas as informações dos usuários e das empresas que optam pelo LINE sejam mantidas em segurança.</p>
+                                       <p>Nesse sentido, é possível realizar configurações importantes de segurança com a intenção de garantir que as mensagens sejam criptografadas e enviadas conforme as políticas estabelecidas na empresa.</p>
+                                       <p>É possível obter diversos benefícios com o uso do LINE na empresa ou em sua vida pessoal, como:</p>
+                                       <ul>
+                                          <li><a cu="https://rockcontent.com/br/blog/produtividade-no-trabalho/" rel="noreferrer noopener" target="_blank"><strong>otimização da produtividade</strong></a>: por meio dele é possível compartilhar informações de modo rápido e acelerar tomadas de decisão;</li>
+                                          <li><strong>aumento da colaboração</strong>: é possível trocar informações relevantes com os seus amigos ou com funcionários, garantindo melhora no trabalho em equipe em diversas áreas da vida;</li>
+                                          <li><strong>ganho de segurança</strong>: como há criptografia, é possível ter tranquilidade ao enviar e receber mensagens;</li>
+                                          <li><strong>facilidade de integração</strong>: é possível integrar com vários aplicativos para usar da forma que for mais conveniente.</li>
+                                       </ul>
+                                       <p>Como você pode ver, há diversas vantagens em utilizar o LINE em sua vida pessoal ou na empresa. Portanto, vale avaliar com mais calma com a intenção de escolher o melhor app de mensagens.</p>
+                                       <h3>KakaoTalk</h3>
+                                       <p>A <a cu="https://www.kakaocorp.com/page/service/service/KakaoTalk?lang=en" rel="noreferrer noopener" target="_blank">KakaoTalk</a> é um aplicativo de mensagens gratuita para dispositivos móveis que permite aos usuários enviar mensagens de forma instantânea, fazer chamadas de voz e vídeo, compartilhar imagens e vídeos, jogar online, usar stickers animados, alertas de lembrete e se conectar com amigos de uma forma diferente.</p>
+                                       <p><strong>Essa ferramenta é muito popular na Coreia do Sul, onde tem mais de 50 milhões de usuários ativos e também conquistou um grande público em outras regiões do mundo como Japão, Hong Kong, Tailândia, Estados Unidos e Brasil.</strong></p>
+                                       <p>Além disso, a KakaoTalk é extremamente segura, fornecendo criptografia de ponta e recursos de verificação de segurança que garantem que suas conversas sejam protegidas. Vale conferir sua interface e diversos recursos sociais interessantes que ela disponibiliza.</p>
+                                       <p>Entre suas últimas atualizações, foi incluída a capacidade de criar salas de bate-papo de grupo de até 200 pessoas, bem como a possibilidade de compartilhar vídeos de até 30 segundos. Além disso, outra novidade é que há uma nova opção para enviar mensagens diretas para amigos, conhecidos como “KakaoTalk Direct”.</p>
+                                       <p>Por fim, a última atualização também permite que você faça buscas e adicione amigos por meio de seu endereço de e-mail.</p>
+                                       <h3>Kik</h3>
+                                       <p>O <a cu="https://kik.com/" rel="noreferrer noopener" target="_blank">Kik</a> é um recurso de mensagens instantâneas e multiplataforma, além de estar disponível gratuitamente. Ele foi desenvolvido para que os usuários possam se comunicar de diferentes maneiras, tanto por texto, imagens, vídeos, documentos, quanto por outras formas de conteúdo.</p>
+                                       <p>Nesse aplicativo também é possível criar grupos e fazer com que várias pessoas possam conversar simultaneamente. Sua estrutura também contribui para que você possa explorar outros serviços como jogos online, sites de compartilhamento e demais serviços de mídia.</p>
+                                       <p>Essa ferramenta é uma excelente alternativa para suas conversas, pois é seguro, gratuito e conta com uma interface intuitiva. Além disso, ela dispõe de um sistema com mensagens criptografadas que mantém a segurança e privacidade durante a navegação.</p>
+                                       <h3>Discord</h3>
+                                       <p>O <a cu="https://discord.com/" rel="noreferrer noopener" target="_blank">Discord</a> é uma plataforma de comunicação desenvolvida para gamers que conta com suporte para voz, texto, vídeo e mídia de jogos. Por meio dela, os jogadores criam e participam de salas de bate-papo, desenvolvem canais privados e compartilham mídia com seus amigos.</p>
+                                       <p><strong>A ideia dessa ferramenta é criar uma experiência mais segura, simples e gratuita, em comparação com outras alternativas para bate-papo na internet</strong>. O Discord está disponível tanto para Android quanto para iOS.&nbsp;</p>
+                                       <p>Quem baixar o aplicativo pode visitar canais públicos ou privados, além de criar seus próprios canais e convidar amigos que desejam participar. Isso significa que você pode desenvolver salas de bate-papo dedicadas para um determinado tópico, como jogos, hobbies, filmes, música, animes e demais assuntos do seu interesse.</p>
+                                       <p>Uma dica importante é usar etiquetas com a intenção de facilitar localizar outras pessoas interessadas nos mesmos assuntos que os seus. Desse modo, você consegue debater com pessoas com ideias semelhantes às suas, criando uma experiência de bate-papo ainda mais divertida.</p>
+                                       <span id="rock-3"></span>
+                                       <h2>Conclusão</h2>
+                                       <p>Independente do seu objetivo, certamente <strong>existem redes sociais de bate-papo para atender às suas necessidades</strong>, e este texto é uma prova disso.</p>
+                                       <p>Não importa se você deseja estabelecer contatos pessoais ou profissionais, esses canais são muito úteis, práticos e, em geral, fáceis e intuitivos de serem utilizados.</p>
+                                       <p>Quer conhecer outros aspectos importantes sobre o marketing nas redes sociais além dos chats online? Então <a cu="https://materiais.rockcontent.com/kit-marketing-redes-sociais" target="_blank" rel="noreferrer noopener">baixe agora mesmo o nosso kit sobre o assunto</a> e boa leitura!</p>
+                                       <div class="rock-convert-banner">
+                                          <a cu="https://materiais.rockcontent.com/kit-marketing-redes-sociais?utm_medium=rock-convert&amp;blogconversionurl=https://rockcontent.com/br/blog/redes-sociais-de-bate-papo/&amp;blogconversionpath=RockConvert&amp;blogconversiondate=03/13/2023" target="_blank" class="rock-convert-cta-link" data-cta-id="34856" data-cta-title="[PT] Kit de Marketing nas Redes Sociais">
+                                             <picture class="attachment-full size-full" title="[PT] Kit de Marketing nas Redes Sociais">
+                                                <source type="image/webp" data-lazy-srcset="https://rockcontent.com/br/wp-content/uploads/sites/2/2021/02/Kit-Marketing-nas-Redes-Sociais.png.webp 750w, https://rockcontent.com/br/wp-content/uploads/sites/2/2021/02/Kit-Marketing-nas-Redes-Sociais-300x80.png.webp 300w" srcset="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20750%20201'%3E%3C/svg%3E" data-lazy-sizes="(max-width: 750px) 100vw, 750px">
+                                                <img width="750" height="201" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20750%20201'%3E%3C/svg%3E" alt="" data-lazy-srcset="https://rockcontent.com/br/wp-content/uploads/sites/2/2021/02/Kit-Marketing-nas-Redes-Sociais.png 750w, https://rockcontent.com/br/wp-content/uploads/sites/2/2021/02/Kit-Marketing-nas-Redes-Sociais-300x80.png 300w" data-lazy-sizes="(max-width: 750px) 100vw, 750px" data-lazy-src="https://rockcontent.com/br/wp-content/uploads/sites/2/2021/02/Kit-Marketing-nas-Redes-Sociais.png">
+                                             </picture>
+                                             <noscript>
+                                                <picture class="attachment-full size-full" title="[PT] Kit de Marketing nas Redes Sociais">
+                                                   <source type="image/webp" srcset="https://rockcontent.com/br/wp-content/uploads/sites/2/2021/02/Kit-Marketing-nas-Redes-Sociais.png.webp 750w, https://rockcontent.com/br/wp-content/uploads/sites/2/2021/02/Kit-Marketing-nas-Redes-Sociais-300x80.png.webp 300w" sizes="(max-width: 750px) 100vw, 750px"/>
+                                                   <img width="750" height="201" src="https://rockcontent.com/br/wp-content/uploads/sites/2/2021/02/Kit-Marketing-nas-Redes-Sociais.png" alt="" srcset="https://rockcontent.com/br/wp-content/uploads/sites/2/2021/02/Kit-Marketing-nas-Redes-Sociais.png 750w, https://rockcontent.com/br/wp-content/uploads/sites/2/2021/02/Kit-Marketing-nas-Redes-Sociais-300x80.png 300w" sizes="(max-width: 750px) 100vw, 750px"/>
+                                                </picture>
+                                             </noscript>
+                                          </a>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-5ac99367" data-id="5ac99367" data-element_type="column">
+                              <div class="elementor-widget-wrap elementor-element-populated">
+                                 <div class="elementor-element elementor-element-5da71357 elementor-widget elementor-widget-rock-share-posts" data-id="5da71357" data-element_type="widget" data-widget_type="rock-share-posts.default">
+                                    <div class="elementor-widget-container">
+                                       <style id="rock-share-post-widget">.rock-share-post{display:flex;flex-direction:column;align-items:center;color:#a0abc0}.rock-share-post__text{font-size:14px;margin:0 0 8px 0}.rock-share-post__icon{padding:8px;background:#edf1f7;border-radius:12px;margin:0 0 8px 0;display:flex;justify-content:center;width:36px;height:36px;align-items:center;cursor:pointer}.rock-share-post__icon:hover{background:#e5e9f0}.rock-share-post__icon-link{margin:auto}@media only screen and (max-width:768px){.rock-share-post{flex-direction:row;justify-content:space-evenly;}}</style>
+									</div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </section>
+                     <div class="elementor-element elementor-element-514ee730 elementor-widget elementor-widget-rock-author-box" data-id="514ee730" data-element_type="widget" data-widget_type="rock-author-box.default">
+                        <div class="elementor-widget-container">
+                           <div class="rock-author-box" id="rock-author-box">
+                              <div class="rock-author-box__content">
+                                 <div class="rock-author-box__content-tag">Author</div>
+                                 <a cu="https://rockcontent.com/br/blog/author/redator/" rel="author">
+                                    <div class="rock-author-box__content-name">Redator Rock Content</div>
+                                 </a>
+                                 <div class="rock-author-box__content-bio"></div>
+                                 <div class="rock-author-box__content-icons"></div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="elementor-section elementor-top-section elementor-element elementor-element-69fcf241 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="69fcf241" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;gradient&quot;}">
+            <div class="elementor-container elementor-column-gap-default">
+               <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-4cc8c644" data-id="4cc8c644" data-element_type="column">
+                  <div class="elementor-widget-wrap elementor-element-populated">
+                     <div class="elementor-element elementor-element-16ee706b elementor-widget elementor-widget-heading" data-id="16ee706b" data-element_type="widget" data-widget_type="heading.default">
+                        <div class="elementor-widget-container">
+                           <h2 class="elementor-heading-title elementor-size-default"><strong> Inscreva-se</strong> em nosso blog</h2>
+                        </div>
+                     </div>
+                     <div class="elementor-element elementor-element-738adb99 elementor-widget elementor-widget-heading" data-id="738adb99" data-element_type="widget" data-widget_type="heading.default">
+                        <div class="elementor-widget-container">
+                           <h3 class="elementor-heading-title elementor-size-default">Acesse, em primeira mão, nossos principais posts diretamente em seu email</h3>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="elementor-section elementor-top-section elementor-element elementor-element-66c5f64a elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="66c5f64a" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+            <div class="elementor-container elementor-column-gap-default">
+               <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-7f675e57" data-id="7f675e57" data-element_type="column">
+                  <div class="elementor-widget-wrap elementor-element-populated">
+                     <div class="elementor-element elementor-element-426b57ee elementor-widget elementor-widget-heading" data-id="426b57ee" data-element_type="widget" data-widget_type="heading.default">
+                        <div class="elementor-widget-container">
+                           <h2 class="elementor-heading-title elementor-size-default"><span class="rock-color-highlight">Posts</span> Relacionados</h2>
+                        </div>
+                     </div>
+                     <section class="elementor-section elementor-inner-section elementor-element elementor-element-6ae53c46 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="6ae53c46" data-element_type="section">
+                        <div class="elementor-container elementor-column-gap-default">
+                           <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-7742e36a" data-id="7742e36a" data-element_type="column">
+                              <div class="elementor-widget-wrap elementor-element-populated">
+                                 <div class="elementor-element elementor-element-55d7ee8 elementor-widget elementor-widget-rock-blog-posts" data-id="55d7ee8" data-element_type="widget" data-widget_type="rock-blog-posts.default">
+                                    <div class="elementor-widget-container">
+                                       <div class="rock-grid">
+                                          <article class="rock-grid__item">
+                                             <div class="rock-grid__blog-image">
+                                                <a cu="https://rockcontent.com/br/blog/estudo-de-caso-tsestoque/">
+                                                   <img width="300" height="145" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20300%20145'%3E%3C/svg%3E" class="attachment-300x300 size-300x300 wp-post-image" alt="Estudo de caso de cliente Rock Content: tsEstoque" data-lazy-srcset="https://rockcontent.com/br/wp-content/uploads/sites/2/2014/04/latest2.png 720w, https://rockcontent.com/br/wp-content/uploads/sites/2/2014/04/latest2-300x145.png 300w" data-lazy-sizes="(max-width: 300px) 100vw, 300px" data-lazy-src="https://rockcontent.com/br/wp-content/uploads/sites/2/2014/04/latest2.png">
+                                                   <noscript><img width="300" height="145" src="https://rockcontent.com/br/wp-content/uploads/sites/2/2014/04/latest2.png" class="attachment-300x300 size-300x300 wp-post-image" alt="Estudo de caso de cliente Rock Content: tsEstoque" srcset="https://rockcontent.com/br/wp-content/uploads/sites/2/2014/04/latest2.png 720w, https://rockcontent.com/br/wp-content/uploads/sites/2/2014/04/latest2-300x145.png 300w" sizes="(max-width: 300px) 100vw, 300px" /></noscript>
+                                                </a>
+                                             </div>
+                                             <div class="rock-grid__blog-content">
+                                                <h2 class="rock-grid__blog-title">
+                                                   <a cu="https://rockcontent.com/br/blog/estudo-de-caso-tsestoque/">
+                                                   Estudo de caso de cliente Rock Content: tsEstoque </a>
+                                                </h2>
+                                                <div class="rock-grid__blog-meta">
+                                                   <div class="rock-grid__blog-author">
+                                                      <img alt="alt" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2018%2018'%3E%3C/svg%3E" data-lazy-srcset="https://secure.gravatar.com/avatar/168a01973eb0f7d4441d67615343c536?s=36&amp;d=mm&amp;r=g 2x" class="avatar avatar-18 photo rock-grid__blog-author-img" height="18" width="18" data-lazy-src="https://secure.gravatar.com/avatar/168a01973eb0f7d4441d67615343c536?s=18&amp;d=mm&amp;r=g">
+                                                      <noscript><img alt='alt' src='https://secure.gravatar.com/avatar/168a01973eb0f7d4441d67615343c536?s=18&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/168a01973eb0f7d4441d67615343c536?s=36&#038;d=mm&#038;r=g 2x' class='avatar avatar-18 photo rock-grid__blog-author-img' height='18' width='18' /></noscript>
+                                                      <span>Renato Mesquita</span>
+                                                   </div>
+                                                   <span class="rock-grid__blog-date">
+                                                   <time datetime="2014-04-30">30 abr, 14</time>
+                                                   |
+                                                   Leitura: 3min </span>
+                                                </div>
+                                             </div>
+                                          </article>
+                                          <article class="rock-grid__item">
+                                             <div class="rock-grid__blog-image">
+                                                <a cu="https://rockcontent.com/br/blog/rock-content-aquisicao-iclips/">
+                                                   <picture class="attachment-300x300 size-300x300 wp-post-image">
+                                                      <source type="image/webp" data-lazy-srcset="https://rockcontent.com/br/wp-content/uploads/sites/2/2021/04/primeira-aquisicao-rock-content-iclips.png.webp 1920w, https://rockcontent.com/br/wp-content/uploads/sites/2/2021/04/primeira-aquisicao-rock-content-iclips-300x169.png.webp 300w, https://rockcontent.com/br/wp-content/uploads/sites/2/2021/04/primeira-aquisicao-rock-content-iclips-1024x576.png.webp 1024w, https://rockcontent.com/br/wp-content/uploads/sites/2/2021/04/primeira-aquisicao-rock-content-iclips-768x432.png.webp 768w, https://rockcontent.com/br/wp-content/uploads/sites/2/2021/04/primeira-aquisicao-rock-content-iclips-1536x864.png.webp 1536w" srcset="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20300%20169'%3E%3C/svg%3E" data-lazy-sizes="(max-width: 300px) 100vw, 300px">
+                                                      <img width="300" height="169" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20300%20169'%3E%3C/svg%3E" alt="iClips é primeira aquisição da Rock Content" data-lazy-srcset="https://rockcontent.com/br/wp-content/uploads/sites/2/2021/04/primeira-aquisicao-rock-content-iclips.png 1920w, https://rockcontent.com/br/wp-content/uploads/sites/2/2021/04/primeira-aquisicao-rock-content-iclips-300x169.png 300w, https://rockcontent.com/br/wp-content/uploads/sites/2/2021/04/primeira-aquisicao-rock-content-iclips-1024x576.png 1024w, https://rockcontent.com/br/wp-content/uploads/sites/2/2021/04/primeira-aquisicao-rock-content-iclips-768x432.png 768w, https://rockcontent.com/br/wp-content/uploads/sites/2/2021/04/primeira-aquisicao-rock-content-iclips-1536x864.png 1536w" data-lazy-sizes="(max-width: 300px) 100vw, 300px" data-lazy-src="https://rockcontent.com/br/wp-content/uploads/sites/2/2021/04/primeira-aquisicao-rock-content-iclips.png">
+                                                   </picture>
+                                                   <noscript>
+                                                      <picture class="attachment-300x300 size-300x300 wp-post-image">
+                                                         <source type="image/webp" srcset="https://rockcontent.com/br/wp-content/uploads/sites/2/2021/04/primeira-aquisicao-rock-content-iclips.png.webp 1920w, https://rockcontent.com/br/wp-content/uploads/sites/2/2021/04/primeira-aquisicao-rock-content-iclips-300x169.png.webp 300w, https://rockcontent.com/br/wp-content/uploads/sites/2/2021/04/primeira-aquisicao-rock-content-iclips-1024x576.png.webp 1024w, https://rockcontent.com/br/wp-content/uploads/sites/2/2021/04/primeira-aquisicao-rock-content-iclips-768x432.png.webp 768w, https://rockcontent.com/br/wp-content/uploads/sites/2/2021/04/primeira-aquisicao-rock-content-iclips-1536x864.png.webp 1536w" sizes="(max-width: 300px) 100vw, 300px"/>
+                                                         <img width="300" height="169" src="https://rockcontent.com/br/wp-content/uploads/sites/2/2021/04/primeira-aquisicao-rock-content-iclips.png" alt="iClips é primeira aquisição da Rock Content" srcset="https://rockcontent.com/br/wp-content/uploads/sites/2/2021/04/primeira-aquisicao-rock-content-iclips.png 1920w, https://rockcontent.com/br/wp-content/uploads/sites/2/2021/04/primeira-aquisicao-rock-content-iclips-300x169.png 300w, https://rockcontent.com/br/wp-content/uploads/sites/2/2021/04/primeira-aquisicao-rock-content-iclips-1024x576.png 1024w, https://rockcontent.com/br/wp-content/uploads/sites/2/2021/04/primeira-aquisicao-rock-content-iclips-768x432.png 768w, https://rockcontent.com/br/wp-content/uploads/sites/2/2021/04/primeira-aquisicao-rock-content-iclips-1536x864.png 1536w" sizes="(max-width: 300px) 100vw, 300px"/>
+                                                      </picture>
+                                                   </noscript>
+                                                </a>
+                                             </div>
+                                             <div class="rock-grid__blog-content">
+                                                <h2 class="rock-grid__blog-title">
+                                                   <a cu="https://rockcontent.com/br/blog/rock-content-aquisicao-iclips/">
+                                                   Rock Content anuncia sua primeira aquisição – iClips agora é Rock Content </a>
+                                                </h2>
+                                                <div class="rock-grid__blog-meta">
+                                                   <div class="rock-grid__blog-author">
+                                                      <img alt="alt" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2018%2018'%3E%3C/svg%3E" data-lazy-srcset="https://secure.gravatar.com/avatar/22db6cf049d064cb0e473dbb5ba70aa7?s=36&amp;d=mm&amp;r=g 2x" class="avatar avatar-18 photo rock-grid__blog-author-img" height="18" width="18" data-lazy-src="https://secure.gravatar.com/avatar/22db6cf049d064cb0e473dbb5ba70aa7?s=18&amp;d=mm&amp;r=g">
+                                                      <noscript><img alt='alt' src='https://secure.gravatar.com/avatar/22db6cf049d064cb0e473dbb5ba70aa7?s=18&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/22db6cf049d064cb0e473dbb5ba70aa7?s=36&#038;d=mm&#038;r=g 2x' class='avatar avatar-18 photo rock-grid__blog-author-img' height='18' width='18' /></noscript>
+                                                      <span>Mauro Silva</span>
+                                                   </div>
+                                                   <span class="rock-grid__blog-date">
+                                                   <time datetime="2019-11-08">8 nov, 19</time>
+                                                   |
+                                                   Leitura: 5min </span>
+                                                </div>
+                                             </div>
+                                          </article>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-2463bf27" data-id="2463bf27" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+                              <div class="elementor-widget-wrap elementor-element-populated">
+                                 <div class="elementor-element elementor-element-77082340 elementor-widget elementor-widget-heading" data-id="77082340" data-element_type="widget" data-widget_type="heading.default">
+                                    <div class="elementor-widget-container">
+                                       <h3 class="elementor-heading-title elementor-size-default"><a>Mais em <strong><span style="color:#4076ed;">SEO</span></strong></a></h3>
+                                    </div>
+                                 </div>
+                                 <div class="elementor-element elementor-element-26ebd53 elementor-widget elementor-widget-rock-blog-posts" data-id="26ebd53" data-element_type="widget" data-widget_type="rock-blog-posts.default">
+                                    <div class="elementor-widget-container">
+                                       <div class="rock-grid">
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </section>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="elementor-section elementor-top-section elementor-element elementor-element-63359c09 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="63359c09" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;gradient&quot;}">
+            <div class="elementor-background-overlay"></div>
+            <div class="elementor-container elementor-column-gap-default">
+               <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-5547f004" data-id="5547f004" data-element_type="column">
+                  <div class="elementor-widget-wrap elementor-element-populated">
+                     <div class="elementor-element elementor-element-6e99638 elementor-widget elementor-widget-heading" data-id="6e99638" data-element_type="widget" data-widget_type="heading.default">
+                        <div class="elementor-widget-container">
+                           <h3 class="elementor-heading-title elementor-size-default">Quer receber mais <strong><span style="color: #FFB92E">conteúdos brilhantes</span></strong> como esse de <strong>graça?</strong></h3>
+                        </div>
+                     </div>
+                     <div class="elementor-element elementor-element-52997687 elementor-widget elementor-widget-heading" data-id="52997687" data-element_type="widget" data-widget_type="heading.default">
+                        <div class="elementor-widget-container">
+                           <p class="elementor-heading-title elementor-size-default">Inscreva-se para receber nossos conteúdos por email e participe da <strong>comunidade da Rock Content!</strong></p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-5c232dc6" data-id="5c232dc6" data-element_type="column">
+                  <div class="elementor-widget-wrap elementor-element-populated">
+                     <div class="elementor-element elementor-element-94ac5e6 elementor-widget elementor-widget-rock-hubspot-form" data-id="94ac5e6" data-element_type="widget" data-widget_type="rock-hubspot-form.default">
+                        <div class="elementor-widget-container">
+                           <style>#rock-contact-form{min-height: 400px;}</style>
+                           <div id="rock-news-form2" class="rock-hubspot-form blog">
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+      </div>
